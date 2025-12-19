@@ -2,12 +2,12 @@
 
 Windows:
 ```
-gcc game.c -o <exe file>
+gcc src\game.c -o <exe file>
 ```
 
 Linux:
 ```
-gcc game.c -o <out file> -lm
+gcc src\game.c -o <out file> -lm
 ```
 
 ### Build with ```make```
