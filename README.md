@@ -16,8 +16,10 @@ Windows build: run ```make windows```
 Linux build: run ```make linux```
 
 Web version:
-- run ```make wasm``` [!]
-<br>or
+- Run ```make wasm``` [!]
+
+OR
+
 - Navigate in src and run index.html
 
 [!] For Web version:
