@@ -12,7 +12,7 @@ gcc game.c -o <out file> -lm
 
 ### Build with ```make```
 - Windows build: run ```make windows```
-- Linux build: run ```make```
+- Linux build: run ```make linux```
 - Web build: run ```make wasm``` [!]
 
 [!] For Web version:
