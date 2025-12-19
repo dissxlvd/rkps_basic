@@ -12,11 +12,12 @@ gcc game.c -o <out file> -lm
 
 ### Build with ```make```
 Windows build: run ```make windows```
+<br>
 Linux build: run ```make linux```
 
 Web version:
 - run ```make wasm``` [!]
-or
+<br>or
 - Navigate in src and run index.html
 
 [!] For Web version:
