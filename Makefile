@@ -17,15 +17,19 @@ windows: $(TARGET)-windows.exe
 $(TARGET)-windows.exe: src\game.c
 	x86_64-w64-mingw32-gcc $(CFLAGS) -o $(TARGET)-windows.exe src\game.c
 
-# WebAssembly build (requires emscripten)
-wasm: $(TARGET).html
+# # WebAssembly build (requires emscripten)
+# wasm: $(TARGET).html
 
-$(TARGET).html: src\game.c
-	emcc src\game.c -O2 -s WASM=1 -o $(TARGET).html \
-		--shell-file src\webasm.html \
-		-s EXIT_RUNTIME=1 \
-		-s NO_EXIT_RUNTIME=0 \
-		-s ALLOW_MEMORY_GROWTH=1
+# $(TARGET).html: src\game.c
+# 	emcc src\game.c -O2 -s WASM=1 -o $(TARGET).html \
+# 		--shell-file src\webasm.html \
+# 		-s EXIT_RUNTIME=1 \
+# 		-s NO_EXIT_RUNTIME=0 \
+# 		-s ALLOW_MEMORY_GROWTH=1
+
+# WebAssembly build
+wasm: src\game.c
+	emcc src\game.c -O2 -s WASM=1 -o $(TARGET).html
 
 # Clean up
 clean:
